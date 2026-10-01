@@ -1,0 +1,21 @@
+pateients = {"Rhea": (130, 190, 105),
+             "Alex": (80, 180, 100)}
+
+normal = 120
+
+for pn, bs in pateients.items():
+    if (pn == "Rhea"):
+        print("Rhea")
+        print("Blood Sugar Summary")
+        for value in bs:
+            if value < 120:
+                print(value, "not formal")
+            else:
+                print(value, "not normal")
+
+        highest = max(bs)
+        print("Highest Blood Sugar count: ", highest)
+        lowest = min(bs)
+        print(lowest, "B")
+        diff = highest - lowest
+        print(diff)
