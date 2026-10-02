@@ -1,0 +1,42 @@
+print("Contribution Benefits")
+
+print("============================")
+name = input("Enter your name: ")
+age = int(input("What is your age? "))
+print("============================")
+
+print("Benefits Eligibility:")
+print("============================")
+print("Ages: under 17: 5,0000")
+print("Ages: 18 - 25: 7,500")
+print("Ages: 26-30: 10,000")
+print("============================")
+
+tax = 0.12
+a = 5000
+b = 7500
+c = 10000
+
+if age < 17:
+    benefit = a
+elif age <= 25:
+    benefit = b
+elif age <= 30:
+    benefit = c
+else:
+    benefit = 0
+
+if benefit > 0:
+    tax_amount = benefit * tax
+    final_amount = benefit - tax_amount
+
+    print(f"You will receive:{benefit:,}")
+    print(f"Tax deducted:{tax_amount:,}")
+    print(f"Final amount:{final_amount:,}")
+
+else:
+    print("You are not eligible for the benefits.")
+
+print("Thank you for your Participation!")
+
+,
