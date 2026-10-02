@@ -1,0 +1,19 @@
+print("Simple Calculator")
+a = 10
+b = 5
+print(a + b)
+######################################
+
+input(str("What is Your Name?"))
+
+#number formatting
+number = 128748.345
+
+print(f"the number is {number:,}")
+print(f"the number is {number:_}")
+
+#ratio
+ratio = 0.8767
+
+print(f"the ratio is: {ratio:.2f}")
+print(f"the ratio is: {ratio:.2%}")
