@@ -1,0 +1,266 @@
+##PYTHON LEARNING PROGRAM
+
+print("==========================================")
+print("       WELCOME TO PYTHON LEARNING")
+print("==========================================")
+
+print("Choose what you want to learn:")
+print()
+print("1. Data Types")
+print("2. Variables")
+print("3. Input and Output")
+print("4. Operators")
+print("5. If / Else Statements")
+print("6. Loops")
+print("7. Lists")
+print("8. Tuples")
+print("9. Sets")
+print("10. Dictionaries")
+print("0. Exit")
+print("==========================================")
+
+choice = input("Enter your choice: ")
+
+# ==========================================
+# 1. DATA TYPES
+# ==========================================
+
+if choice == "1":
+    print("\n===== DATA TYPES =====")
+    print("Data types tell Python what kind of data you are using.")
+    print()
+    
+    print("1. String - text")
+    print('Example: name = "Maria"')
+    
+    print("\n2. Integer - whole numbers")
+    print("Example: age = 18")
+    
+    print("\n3. Float - numbers with decimals")
+    print("Example: height = 5.10")
+    
+    print("\n4. Boolean - True or False")
+    print("Example: student = True")
+    
+    print("\nExample Code:")
+    print('name = "Maria"')
+    print("age = 18")
+    print("height = 5.10")
+    print("student = True")
+    
+    print("\nTry it yourself:")
+    name = input("Enter your name: ")
+    age = int(input("Enter your age: "))
+    
+    print("\nYour name is:", name)
+    print("Your age is:", age)
+    print("Type of name:", type(name))
+    print("Type of age:", type(age))
+
+
+# ==========================================
+# 2. VARIABLES
+# ==========================================
+
+elif choice == "2":
+    print("\n===== VARIABLES =====")
+    print("Variables are used to store information.")
+    print()
+    
+    print("Example:")
+    print('name = "Maria"')
+    print("age = 18")
+    
+    name = "Maria"
+    age = 18
+    
+    print("\nName:", name)
+    print("Age:", age)
+
+
+# ==========================================
+# 3. INPUT AND OUTPUT
+# ==========================================
+
+elif choice == "3":
+    print("\n===== INPUT AND OUTPUT =====")
+    print("input() allows the user to enter information.")
+    print("print() displays information.")
+    
+    print("\nExample:")
+    print('name = input("Enter your name: ")')
+    print('print("Hello", name)')
+    
+    name = input("\nEnter your name: ")
+    print("Hello", name)
+
+
+# ==========================================
+# 4. OPERATORS
+# ==========================================
+
+elif choice == "4":
+    print("\n===== OPERATORS =====")
+    print("+  Addition")
+    print("-  Subtraction")
+    print("*  Multiplication")
+    print("/  Division")
+    print("// Floor Division")
+    print("%  Modulus")
+    print("** Exponent")
+    
+    print("\nExample:")
+    print("a = 10")
+    print("b = 3")
+    
+    a = 10
+    b = 3
+    
+    print("Addition:", a + b)
+    print("Subtraction:", a - b)
+    print("Multiplication:", a * b)
+    print("Division:", a / b)
+    print("Modulus:", a % b)
+
+
+# ==========================================
+# 5. IF / ELSE
+# ==========================================
+
+elif choice == "5":
+    print("\n===== IF / ELSE STATEMENTS =====")
+    print("If / Else allows your program to make decisions.")
+    
+    print("\nExample:")
+    print("age = 18")
+    print()
+    print('if age >= 18:')
+    print('    print("You are an adult.")')
+    print('else:')
+    print('    print("You are a minor.")')
+    
+    age = int(input("\nEnter your age: "))
+    
+    if age >= 18:
+        print("You are an adult.")
+    else:
+        print("You are a minor.")
+
+
+# ==========================================
+# 6. LOOPS
+# ==========================================
+
+elif choice == "6":
+    print("\n===== LOOPS =====")
+    print("Loops repeat code multiple times.")
+    
+    print("\nExample:")
+    print('for i in range(5):')
+    print('    print(i)')
+    
+    print("\nResult:")
+    
+    for i in range(5):
+        print(i)
+
+
+# ==========================================
+# 7. LISTS
+# ==========================================
+
+elif choice == "7":
+    print("\n===== LISTS =====")
+    print("Lists store multiple values in one variable.")
+    
+    print("\nExample:")
+    print('fruits = ["Apple", "Banana", "Mango"]')
+    
+    fruits = ["Apple", "Banana", "Mango"]
+    
+    print("\nFruits:", fruits)
+    print("First fruit:", fruits[0])
+    
+    print("\nAdding a fruit...")
+    fruits.append("Orange")
+    
+    print("Updated list:", fruits)
+
+
+# ==========================================
+# 8. TUPLES
+# ==========================================
+
+elif choice == "8":
+    print("\n===== TUPLES =====")
+    print("Tuples are similar to lists, but they cannot be changed.")
+    
+    print("\nExample:")
+    print('coordinates = (10, 20)')
+    
+    coordinates = (10, 20)
+    
+    print("Coordinates:", coordinates)
+    print("X:", coordinates[0])
+    print("Y:", coordinates[1])
+
+
+# ==========================================
+# 9. SETS
+# ==========================================
+
+elif choice == "9":
+    print("\n===== SETS =====")
+    print("Sets store unique values.")
+    print("Duplicate values are automatically removed.")
+    
+    print("\nExample:")
+    print('numbers = {1, 2, 2, 3, 4}')
+    
+    numbers = {1, 2, 2, 3, 4}
+    
+    print("Set:", numbers)
+
+
+# ==========================================
+# 10. DICTIONARIES
+# ==========================================
+
+elif choice == "10":
+    print("\n===== DICTIONARIES =====")
+    print("Dictionaries store information using KEY and VALUE pairs.")
+    
+    print("\nExample:")
+    print('student = {')
+    print('    "name": "Maria",')
+    print('    "age": 18,')
+    print('    "course": "BSIT"')
+    print('}')
+    
+    student = {
+        "name": "Maria",
+        "age": 18,
+        "course": "BSIT"
+    }
+    
+    print("\nStudent Information:")
+    print("Name:", student["name"])
+    print("Age:", student["age"])
+    print("Course:", student["course"])
+    
+    print("\nAdding a new value...")
+    student["school"] = "Davao Doctors College"
+    
+    print("School:", student["school"])
+
+
+# ==========================================
+# EXIT
+# ==========================================
+
+elif choice == "0":
+    print("\nThank you for learning Python!")
+
+else:
+    print("\nInvalid choice. Please choose from 0-10.")
+```
