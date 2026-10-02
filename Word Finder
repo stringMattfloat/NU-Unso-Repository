@@ -1,0 +1,19 @@
+while True:
+    word = input("Enter a Word: ")
+    letter = input("Enter a character to search for: ")
+
+    found = (False)
+
+    for chatacter in word:
+        if chatacter.lower() == letter.lower():
+            found = True
+            break
+
+    if found:
+        print("Character Found")
+    else:
+        print("Character Not Found")
+    again = input("Would you like to try again? (Y/N): ")
+
+    if again.upper() != "Y":
+        break
