@@ -1,0 +1,62 @@
+##Employee name, Job Position, Actual Hours Worked
+##Must Determine the salary based on actual hours worked
+##Salay by Job position
+##Program must determine absence or overtime from the actual hours worked. Do not ask to enter overtime hours separately, your program must determine.
+##Display the salary components and the final net weekly salary
+##Ue appropriate conditions statements , variable, arithmetic operations, and formatted output.
+
+name = str(input("Enter name:"))
+
+print("============================================")
+print("Input            Positon             Salary")
+print("[A]              Janitor             P20,000")
+print("[B]              Clerk               P25,000")
+print("[C]              Cashier             P28,000")
+print("[D]              Manager             P45,000")
+print("============================================")
+
+a = 0
+b = 0
+c = 0
+d = 0
+
+pos = str(input("Enter your position: ")).lower()
+hours = int(input("Enter your hours: "))
+
+##print(f"this is your pus: {pos.lower()}")
+
+match (pos):
+    case 'a':
+        a = 20000
+        wkSal = a / 4
+        all = wkSal * 0.05
+        gbs = wkSal + all
+        hR = gbs / 48
+
+        if hours < 48:
+            absHr = 48 - hours
+            absDed = absHr * hR * 1.10
+        elif hours > 48:
+            otHr = hours - 48
+            otRate = hR * 1.5
+        else:
+            print("Invalid")
+
+    case 'b':
+        b = 25000
+        wkSal = a / 4
+        all = wkSal * 0.05
+        gbs = wkSal + all
+        hR = gbs / 48
+
+        if hours < 48:
+            absHr = 48 - hours
+            absDed = absHr * hR * 1.10
+        elif hours > 48:
+            otHr = hours - 48
+            otRate = hR * 1.5
+        else:
+            print("Invalid")
+print("Salary: ", a)
+print("Weekly Salary: ", wkSal)
+print("Allowance", all)
